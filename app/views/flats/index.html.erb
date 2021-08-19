@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <h1>All Our Flats(<%= @flats.length %>)</h1>
+  <br>
+  <div class="row">
+    <% @flats.each do |flat| %>
+
+    <div class="card col-md-4 p-3 m-3">
+      <div class="card-body">
+        <h5 class="card-title"><%= flat.name %></h5>
+        <p class="card-text"><%= flat.description %></p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+
+    <% end %>
+  </div>
+</div>
